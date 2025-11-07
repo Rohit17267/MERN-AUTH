@@ -24,7 +24,7 @@ app.use(cors({origin:(origin, callback) => {
     }
   },credentials: true}));
 
-
+  
 app.use('/api/auth',authRouter);
 app.use('/api/user',userRouter);
 app.get('/',(req,res)=> res.send('api is working '));

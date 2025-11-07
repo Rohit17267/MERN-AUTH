@@ -12,7 +12,7 @@ const ResetPassword = () => {
   const [otp,setOtp] = useState(0);
   const [isOtpSubmited,setIsOtpSubmited] = useState(false);
 
-
+  
   const inputRefs =  React.useRef([])
     const{axios,isLoggedin,userData,getUserData} = useContext(AppContent);
     const handleInput = (e,index)=>{

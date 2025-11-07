@@ -21,7 +21,6 @@ export const AppContextProvider = (props)=>{
                 if(data.success){
                     setIsLoggedin(true);
                     getUserData();
-                    console.log(userData);
                 }
                 
             } catch (error) {
