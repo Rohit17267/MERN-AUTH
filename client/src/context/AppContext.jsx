@@ -17,7 +17,7 @@ export const AppContextProvider = (props)=>{
         const getAuthState = async ()=>{
             try {
                 const {data} = await axios.get('/api/auth/is-auth')
-                 console.log(data);
+                
                 if(data.success){
                     setIsLoggedin(true);
                     getUserData();
@@ -37,7 +37,7 @@ export const AppContextProvider = (props)=>{
                 }else{
                     toast.success(data.message);
                 }
-                console.log(userData);
+              
             } catch (error) {
                 toast.error(error.message);
             }
